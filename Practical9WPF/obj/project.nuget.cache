@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "rrJYnDEVd+MKH57kyZiNk/bYsXtYu5gTA1T/IhWXbDgCMeVlJvsl6cBJeo3BQN1hD++Wk7caFlVjt75hT/CD7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\valiu\\RiderProjects\\Practical9WPF\\Practical9WPF\\Practical9WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valiu\\.nuget\\packages\\controlzex\\6.0.0\\controlzex.6.0.0.nupkg.sha512",
+    "C:\\Users\\valiu\\.nuget\\packages\\imapx\\2.0.0.18\\imapx.2.0.0.18.nupkg.sha512",
+    "C:\\Users\\valiu\\.nuget\\packages\\mahapps.metro\\3.0.0-alpha0457\\mahapps.metro.3.0.0-alpha0457.nupkg.sha512",
+    "C:\\Users\\valiu\\.nuget\\packages\\materialdesigncolors\\3.0.0-ci349\\materialdesigncolors.3.0.0-ci349.nupkg.sha512",
+    "C:\\Users\\valiu\\.nuget\\packages\\materialdesignthemes\\5.0.0-ci349\\materialdesignthemes.5.0.0-ci349.nupkg.sha512",
+    "C:\\Users\\valiu\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\valiu\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ImapX 2.0.0.18' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ImapX",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
+}

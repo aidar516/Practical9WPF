@@ -1,0 +1,108 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Practical9WPF/1.0.0": {
+        "dependencies": {
+          "ImapX": "2.0.0.18",
+          "MahApps.Metro": "3.0.0-alpha0457"
+        },
+        "runtime": {
+          "Practical9WPF.dll": {}
+        }
+      },
+      "ControlzEx/6.0.0": {
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
+          "System.Text.Json": "5.0.2"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/ControlzEx.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.283"
+          }
+        }
+      },
+      "ImapX/2.0.0.18": {
+        "runtime": {
+          "lib/net46/ImapX.dll": {
+            "assemblyVersion": "2.0.0.18",
+            "fileVersion": "2.0.0.18"
+          }
+        }
+      },
+      "MahApps.Metro/3.0.0-alpha0457": {
+        "dependencies": {
+          "ControlzEx": "6.0.0",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/MahApps.Metro.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.457"
+          }
+        },
+        "resources": {
+          "lib/net6.0-windows7.0/de/MahApps.Metro.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.39.4716"
+          }
+        }
+      },
+      "System.Text.Json/5.0.2": {}
+    }
+  },
+  "libraries": {
+    "Practical9WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ControlzEx/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MEaqj6ienvKR4E7QJ3vwzo2vrdy2Kqw9Z3CudY5iUixR5iMYeLoMlks7EiABsz4WqDsgVLd9u7fixmCOGU+4ow==",
+      "path": "controlzex/6.0.0",
+      "hashPath": "controlzex.6.0.0.nupkg.sha512"
+    },
+    "ImapX/2.0.0.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L7teY0omaWETBSqAIsA/5bWvBxZFBGvieN9JmT0j5BOEx4xYpaQgXaCx4C7X+Fp/SQ8PSR1L3cHnxHOP0e3/IA==",
+      "path": "imapx/2.0.0.18",
+      "hashPath": "imapx.2.0.0.18.nupkg.sha512"
+    },
+    "MahApps.Metro/3.0.0-alpha0457": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qA7tPjUEN5C7/kIbFijqj8Y06nJ0mch+ptLH0eW5tfCIhqVojQa45SFzh+f4B9KMhsOZ2GWyDXmohVXs8RgTuw==",
+      "path": "mahapps.metro/3.0.0-alpha0457",
+      "hashPath": "mahapps.metro.3.0.0-alpha0457.nupkg.sha512"
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    },
+    "System.Text.Json/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
+      "path": "system.text.json/5.0.2",
+      "hashPath": "system.text.json.5.0.2.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+﻿<Page x:Class="Practical9WPF.MessagesViewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Practical9WPF"
+      mc:Ignorable="d"
+      Title="MessagesViewPage" d:DesignHeight="*" d:DesignWidth="*" >
+    <Grid Background="#696969">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <RichTextBox Grid.Row="0" Background="{Binding null}"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Name="backBtn" Grid.Row="1" Grid.Column="0" Content="Вернуться" FontSize="20" Click="BackBtn_Click"/>
+            <Button Name="replyBtn" Grid.Row="1" Grid.Column="1" Content="Ответить" FontSize="20" Click="ReplyBtn_Click"/>
+            <Frame Name="contentFrame" NavigationUIVisibility="Hidden" />
+        </Grid>
+    </Grid>
+</Page>
