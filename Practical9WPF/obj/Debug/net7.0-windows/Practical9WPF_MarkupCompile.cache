@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\App.xaml
-4-819768225
+51127394601
 
-7911396756
+8355529806
 204741693349
-MailWindow.xaml;MainWindow.xaml;MessagesPage.xaml;MessagexViewPage.xaml;
+MailWindow.xaml;MainWindow.xaml;MessagesPage.xaml;MessagesViewPage.xaml;ReplyAndWritePage.xaml;
 
-True
+False
 

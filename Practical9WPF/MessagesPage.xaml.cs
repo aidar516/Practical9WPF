@@ -10,6 +10,7 @@ namespace Practical9WPF;
 
 public partial class MessagesPage : Page
 {
+    private ObservableCollection<Message> messagesCollection = new ObservableCollection<Message>();
     public MessagesPage(string folderName)
     {
         InitializeComponent();
@@ -24,13 +25,19 @@ public partial class MessagesPage : Page
             loadingProgressRing.Visibility = Visibility.Visible;
             loadingProgressRing.IsActive = true;
 
+            // Очищаем коллекцию перед загрузкой новых сообщений
+            messagesCollection.Clear();
+
             // Асинхронно получить сообщения для выбранной папки
             var messages = await Task.Run(() => ImapHelper.GetMessagesForFolder(folderName));
 
-            // Создать новую коллекцию для сообщений
-            var messagesCollection = new ObservableCollection<Message>(messages);
+            // Добавляем новые сообщения в коллекцию
+            foreach (var message in messages)
+            {
+                messagesCollection.Add(message);
+            }
 
-            // Установить новую коллекцию для ListView
+            // Устанавливаем коллекцию как источник данных для ListView
             messagesLV.ItemsSource = messagesCollection;
 
             // Скрыть индикатор загрузки
@@ -50,5 +57,20 @@ public partial class MessagesPage : Page
             MessagesViewPage messageViewPage = new MessagesViewPage(selectedMessage);
             NavigationService.Navigate(messageViewPage);
         }
+    }
+
+    private void OpenContext_Click(object sender, RoutedEventArgs e)
+    {
+        if (messagesLV.SelectedItem is Message selectedMessage)
+        {
+            MessagesViewPage messageViewPage = new MessagesViewPage(selectedMessage);
+            NavigationService.Navigate(messageViewPage);
+        }
+    }
+
+    private void SendContext_Click(object sender, RoutedEventArgs e)
+    {
+        ReplyAndWritePage replyAndWritePage = new ReplyAndWritePage();
+        contentFrame.Content = replyAndWritePage;
     }
 }

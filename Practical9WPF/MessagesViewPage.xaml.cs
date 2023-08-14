@@ -18,6 +18,9 @@ public partial class MessagesViewPage : Page
 
     private void ReplyBtn_Click(object sender, RoutedEventArgs e)
     {
-        
+        ReplyAndWritePage replyAndWritePage = new ReplyAndWritePage();
+        contentFrame.Content = replyAndWritePage;
     }
+    
+    
 }

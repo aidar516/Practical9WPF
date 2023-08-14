@@ -15,7 +15,14 @@
                     <GridViewColumn Header="From" DisplayMemberBinding="{Binding From.Address}"/>
                 </GridView>
             </ListView.View>
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="OpenContext" Header="Открыть" Click="OpenContext_Click"/>
+                    <MenuItem Name="SendContext" Header="Ответить" Click="SendContext_Click"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
         </ListView>
         <mah:ProgressRing Name="loadingProgressRing" IsActive="False" Visibility="Collapsed"/>
+        <Frame Name="contentFrame" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Page>
