@@ -10,13 +10,18 @@
     <Window.Resources>
         <Style x:Key="FolderButtonStyle" TargetType="Button">
             <Setter Property="Content" Value="{Binding}" />
-            <Setter Property="Margin" Value="0, 10, 0, 0"/>
-            <Setter Property="Background" Value="{Binding null}"/>
-            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="5"/>
             <Setter Property="Width" Value="225"/>
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="Foreground" Value="#000" />
             <EventSetter Event="Click" Handler="FolderButton_Click" />
+            <Setter Property="Background" Value="#A9A9A9"/>
+        </Style>
+        <Style TargetType="ScrollBar">
+            <Setter Property="Visibility" Value="Collapsed"/>
+        </Style>
+        <Style TargetType="TreeViewItem">
+            <Setter Property="Padding" Value="0"/>
         </Style>
     </Window.Resources>
     <Grid Background="#696969">
@@ -30,10 +35,10 @@
                 <RowDefinition/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Почта: " TextAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+            <TextBlock Text="Почта: " TextAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
             <TreeView Grid.Row="1" Name="foldersTreeView" Background="{Binding null}" BorderThickness="0" SelectedItemChanged="FoldersTreeView_SelectedItemChanged">
             </TreeView>
-            <Button Name="sendBtn" Grid.Row="2" Content="Написать" Margin="0, 0, 0, 20" Width="225" BorderThickness="0" Background="{Binding null}" FontSize="20"/>
+            <Button Name="sendBtn" Grid.Row="2" Content="Написать" Height="Auto" Margin="0, 0 , 0, 15" VerticalAlignment="Center" Foreground="#000" Width="225" BorderThickness="0" Background="#A9A9A9" FontSize="22"/>
         </Grid>
         <Frame Name="contentFrame" Grid.Column="1" Grid.RowSpan="3" NavigationUIVisibility="Hidden"/> 
     </Grid>

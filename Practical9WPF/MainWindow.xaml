@@ -24,7 +24,7 @@
             <Grid HorizontalAlignment="Center" Margin="10">
                 <WrapPanel>
                     <TextBox Name="login" Width="300" FontSize="16" Background="{Binding null}"/>
-                    <ComboBox Name="mailList" Width="100" VerticalAlignment="Center">
+                    <ComboBox Name="mailList" Width="100" FontSize="16" VerticalAlignment="Center">
                         <ComboBoxItem Content="Mail" Tag="imap.mail.ru"/>
                         <ComboBoxItem Content="Yandex" Tag="imap.yandex.ru"/>
                         <ComboBoxItem Content="Rambler" Tag="imap.rambler.ru"/>

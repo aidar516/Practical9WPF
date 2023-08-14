@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -71,6 +72,6 @@ public partial class MessagesPage : Page
     private void SendContext_Click(object sender, RoutedEventArgs e)
     {
         ReplyAndWritePage replyAndWritePage = new ReplyAndWritePage();
-        contentFrame.Content = replyAndWritePage;
+        NavigationService.Navigate(replyAndWritePage);
     }
 }

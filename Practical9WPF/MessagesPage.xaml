@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Practical9WPF"
       xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
       mc:Ignorable="d"
-      Title="InboxPage" d:DesignHeight="*" d:DesignWidth="*">
+      Title="InboxPage" d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <ListView Name="messagesLV" MouseDoubleClick="MessagesLV_OnMouseDoubleClick" Background="#696969">
             <ListView.View>
