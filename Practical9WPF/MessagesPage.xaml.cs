@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,26 +21,20 @@ public partial class MessagesPage : Page
     {
         try
         {
-            // Показать индикатор загрузки
             loadingProgressRing.Visibility = Visibility.Visible;
             loadingProgressRing.IsActive = true;
 
-            // Очищаем коллекцию перед загрузкой новых сообщений
             messagesCollection.Clear();
 
-            // Асинхронно получить сообщения для выбранной папки
             var messages = await Task.Run(() => ImapHelper.GetMessagesForFolder(folderName));
 
-            // Добавляем новые сообщения в коллекцию
             foreach (var message in messages)
             {
                 messagesCollection.Add(message);
             }
 
-            // Устанавливаем коллекцию как источник данных для ListView
             messagesLV.ItemsSource = messagesCollection;
 
-            // Скрыть индикатор загрузки
             loadingProgressRing.IsActive = false;
             loadingProgressRing.Visibility = Visibility.Collapsed;
         }

@@ -32,7 +32,8 @@ C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-window
 C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\bin\Debug\net7.0-windows\MaterialDesignColors.dll
 C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
 C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-windows\MessagesViewPage.g.cs
-C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-windows\ReplyAndWritePage.g.cs
 C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-windows\MessagesViewPage.baml
-C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-windows\ReplyAndWritePage.baml
 C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-windows\App.baml
+C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-windows\ReplyAndWritePage.g.cs
+C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\obj\Debug\net7.0-windows\ReplyAndWritePage.baml
+C:\Users\valiu\RiderProjects\Practical9WPF\Practical9WPF\bin\Debug\net7.0-windows\Spire.Doc.dll

@@ -38,7 +38,7 @@
             <TextBlock Text="Почта: " TextAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
             <TreeView Grid.Row="1" Name="foldersTreeView" Background="{Binding null}" BorderThickness="0" SelectedItemChanged="FoldersTreeView_SelectedItemChanged">
             </TreeView>
-            <Button Name="sendBtn" Grid.Row="2" Content="Написать" Height="Auto" Margin="0, 0 , 0, 15" VerticalAlignment="Center" Foreground="#000" Width="225" BorderThickness="0" Background="#A9A9A9" FontSize="22"/>
+            <Button Name="sendBtn" Grid.Row="2" Content="Написать" Click="SendBtn_Click" Height="Auto" Margin="0, 0 , 0, 15" VerticalAlignment="Center" Foreground="#000" Width="225" BorderThickness="0" Background="#A9A9A9" FontSize="22"/>
         </Grid>
         <Frame Name="contentFrame" Grid.Column="1" Grid.RowSpan="3" NavigationUIVisibility="Hidden"/> 
     </Grid>
